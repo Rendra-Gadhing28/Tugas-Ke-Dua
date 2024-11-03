@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <style>
+        body{
+        background-color: blueviolet;
+        }
+        h1{
+            text-align: center;
+            border-bottom: 2px dashed;
+            padding-bottom:20px;
+            font-weight: 700;
+        }
+        .cnt{
+            display: flex;
+            justify-content: center;
+        }
+        .fr{
+            background-color: cyan;
+            border: 2px dashed;
+            width: 1280px;
+            margin: 20px;
+            border-radius: 15px;
+            height: 600px;
+            box-shadow: 5px 5px #778899;
+        }
+        label{
+            height: 580px;
+            margin: 10px;
+
+        }
+        input[type=checkbox] {
+            margin: 0px 0px 10px 10px; 
+        }
+        input[type="tel"],
+        input[type="date"],
+        input[type="city"],
+        input[type="text"]
+        {
+            width: 99%;
+            margin-left: 5px;
+            border-radius: 35px;
+            margin-bottom: 13px;
+        }
+        select[id="agama"]{
+        width: 99%;;
+        border-radius: 35px;
+        margin-left:5px;
+        margin-bottom: 13px;
+    }
+
+textarea[id="address"]{
+    width: 99%;
+    margin-left: 5px;
+    border-radius: 35px;
+    margin-bottom: 20px;
+}
+button{
+    border-radius: 35px;
+    padding: 5px 15px 5px 15px;
+    box-shadow: 5px #778899;
+    background-color: whitesmoke;
+    cursor: pointer;
+    color: green;
+    margin: 20px 10px 20px 10px;}
+    input[type="radio"]{
+        margin: 0px 0px 10px 10px;
+    }
+
+    .tombol{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+button:hover{
+    color: white;
+    background-color: rgb(58, 56, 56);
+}
+.box{
+    margin: 10px;
+    margin-bottom: 15px;
+}
+    </style>
+</head>
+<body>
+        <div class="cnt"> 
+             <form class="fr">
+            <h1> Formulir Pendaftaran </h1> 
+            <div class="box">
+         <label for="name"> Nama </label><br>
+           <input type="text" id="name" name="name" placeholder="username"><br>
+
+         <label for ="city"> Kota Lahir </label> <br>
+            <input type="text" placeholder="Kota Lahir" id="city" name="city" list="kota-lahir"> <br>
+           <datalist id="kota-lahir"> 
+            <option value="SEMARANG">SEMARANG</option>
+            <option value="UNGARAN">UNGARAN</option>
+            <option value="DEMAK">DEMAK</option>
+            <option value="JAKARTA">JAKARTA</option>
+           </datalist>
+
+         <label  for ="date">Tanggal Lahir </label> <br>
+            <input id="date" type="date" name="date"> <br>
+
+         <label for ="gender"> Gender </label> <br>
+                <input class="gender" type="radio" value="Pria" name="Gender">Pria
+                <input class="gender" type="radio" value="Wanita" name="Gender">Wanita <br>
+          
+         <label for="telepon"> No HP </label><br>
+                    <input type="tel" id="telepon" name="telepon" placeholder="0"><br>
+
+         <label>Makanan Favorit</label> <br>
+            <input type="checkbox" id="nasi" name="favorite-food" value="Nasi goreng">
+
+         <label for="nasi">Nasi goreng</label>
+            <input type="checkbox" id="sambal" name="favorite-food" value="Sambal Udang">
+        <label for="sambal">Sambal Udang</label> <br>
+
+        <label  for ="agama"> Agama </label> <br>
+                    <select id="agama" class="agma">
+                        <option value="ISLAM">ISLAM</option>
+                        <option value="KATOLIK"> KATOLIK</option>
+                        <option value="KRISTEN">KRISTEN</option>
+                        <option value="HINDU"> HINDU </option>
+                        <option value="BUDHA">BUDHA</option>
+                        <option value="KONGHUCU">KONGHUCU</option>
+                    </select>
+                    <br>
+                    
+        <label for="address">Alamat</label> <br>
+        <textarea id="address"> </textarea>
+
+        <div class="tombol">
+            <button type="submit">Send</button>
+            <button type="reset">Clear</button>
+            </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
