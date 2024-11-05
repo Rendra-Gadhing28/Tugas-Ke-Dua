@@ -1,0 +1,37 @@
+body{
+    background: url(nightsky.jpg);
+    background-size: 100%;
+}
+.conten{
+    border: 2px dashed;
+    padding: 20px ;
+    border-radius: 20px;
+    text-align: center;
+    color:white;
+}
+
+table{
+    text-align: center;
+    overflow-x: auto;
+    width: 100%;
+     max-width:100%;
+     border-collapse: collapse;
+}
+#kotak{
+    border: 2px dashed whitesmoke;
+    background-color: rgb(39, 105, 172);
+    margin: 20px 0 20px 0;
+    
+}
+th{
+    width: 30px;
+    height:40px;
+    align-items: center;
+    justify-content: center;
+}
+th:hover{
+    background-color: #1bc7fa ;
+}
+h2:hover{
+    color: aquamarine;
+}
